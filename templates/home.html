@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Movie Reviews Sentiment Analysis</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+       
+    	<div class="container">
+            <h2 class='container-heading'><span class="heading_font">MOVIE REVIEW SENTIMENT ANALYSIS</h2>
+            <div class='description'>
+    			<p>Please write your review in the box to check whether the review was Good or Bad</p>
+    		
+    	</div>
+
+       
+    	<div class="ml-container">
+    		<form action="{{ url_for('predict') }}" method="POST">
+        		<textarea class='message-box' name="review"  placeholder="Enter Your Review Here... "></textarea><br/>
+        		<input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+    	</div>
+
+        
+       <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href=""><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href=""><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>© PHANICE KEMUNTO 2021</p>
+       </div>
+
+    </body>
+</html>
